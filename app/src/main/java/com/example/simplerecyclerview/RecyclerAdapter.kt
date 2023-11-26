@@ -4,11 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter :RecyclerView.Adapter<ViewHolderItem>() {
+class RecyclerAdapter : RecyclerView.Adapter<ViewHolderItem>() {
     // 表示するリストを用意
-    private val animalList = listOf(
-        "ライオン","クマ","キリン","ゾウ","パンダ","コアラ","サル","ヒョウ","ウサギ", "ゴリラ",
-        "カバ","カピバラ","リス","ワニ","イルカ","ヒツジ","ネコ","ラッコ","カメ","クジラ"
+
+    val animalList = listOf(
+    //(押された番号のanimalListをToastで表示)
+        "ライオン", "クマ", "キリン", "ゾウ", "パンダ", "コアラ", "サル", "ヒョウ", "ウサギ", "ゴリラ",
+        "カバ", "カピバラ", "リス", "ワニ", "イルカ", "ヒツジ", "ネコ", "ラッコ", "カメ", "クジラ"
     )
 
     // ここで１行分のレイアウト(View)を生成
